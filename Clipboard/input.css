@@ -6,6 +6,10 @@
     h3 {
       @apply mb-8 text-4xl font-semibold text-darkGrayishBlue md:text-5xl;
     }
+
+    h5 {
+      @apply mb-2 font-bold text-2xl text-darkGrayishBlue;
+    }
   }
 
 .container {
@@ -13,15 +17,15 @@
 }
 
 .content {
-    @apply leading-9 max-w-3xl mx-auto mb-10 text-2xl text-center text-grayishBlue;
+    @apply  max-w-3xl mx-auto mb-10 text-center text-grayishBlue;
 }
 
 .btn-container {
-    @apply flex flex-col items-center justify-center w-full space-y-6 text-white md:flex-row md:space-y-0 md:space-x-4;
+    @apply flex flex-col justify-center w-full space-y-6 text-white md:flex-row md:space-y-0 md:space-x-4;
 }
 
 .btn {
-    @apply py-4 px-8 rounded-full w-full shadow-lg hover:opacity-80 transition-opacity duration-500 font-medium text-xl;
+    @apply py-4 px-8 rounded-full shadow-lg hover:opacity-80 transition-opacity duration-500 font-medium text-xl cursor-pointer;
 }
 
 body {
