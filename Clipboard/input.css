@@ -3,39 +3,44 @@
 @tailwind utilities;
 
 @layer base {
-    h3 {
-      @apply mb-8 text-4xl font-semibold text-darkGrayishBlue md:text-5xl;
-    }
-
-    h5 {
-      @apply mb-2 font-bold text-2xl text-darkGrayishBlue;
-    }
+  h3 {
+    @apply mb-8 text-4xl font-semibold text-darkGrayishBlue md:text-5xl;
   }
 
+  h5 {
+    @apply mb-2 font-bold text-2xl text-darkGrayishBlue;
+  }
+}
+
 .container {
-    @apply max-w-6xl mx-auto text-center px-10;
+  @apply max-w-6xl mx-auto text-center px-10;
 }
 
 .content {
-    @apply  max-w-3xl mx-auto mb-10 text-center text-grayishBlue;
+  @apply max-w-3xl mx-auto text-center text-grayishBlue;
 }
 
 .btn-container {
-    @apply flex flex-col justify-center w-full space-y-6 text-white md:flex-row md:space-y-0 md:space-x-4;
+  @apply flex flex-col justify-center w-full space-y-6 text-white md:flex-row md:space-y-0 md:space-x-4;
 }
 
 .btn {
-    @apply py-4 px-8 rounded-full shadow-lg hover:opacity-80 transition-opacity duration-500 font-medium text-xl cursor-pointer;
+  @apply py-4 px-8 rounded-full shadow-lg hover:opacity-80 transition-opacity duration-500 font-medium text-xl cursor-pointer;
+}
+
+.ficon:hover {
+  filter: invert(53%) sepia(68%) saturate(434%) hue-rotate(121deg)
+    brightness(101%) contrast(94%);
 }
 
 body {
-    background-image: url('../images/bg-header-desktop.png');
-    background-repeat: no-repeat;
-    background-size: contain;
+  background-image: url("../images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 @media (max-width: 576px) {
-    body {
-        background-image: url('../images/bg-header-mobile.png');
-    }
+  body {
+    background-image: url("../images/bg-header-mobile.png");
+  }
 }
